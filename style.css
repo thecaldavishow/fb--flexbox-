@@ -1,5 +1,5 @@
 body{
-    width: 100%;
+    width: max-content;
 }
 .box{
     display: flex;
@@ -69,7 +69,7 @@ span {
 }
 .divider{
     position: relative;
-    left: -80px;
+    left: -70px;
     display: flex;
     justify-content: center;
     max-height: 100vh ;
@@ -77,11 +77,12 @@ span {
     position: relative;
 }
 .form h3, input , button{
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+    font-family: Segoe UI , Segoe UI Bold,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
     font-weight: 800;
 }
 .form-content{
-
+    position: relative;
+    right: -30px;
     padding: 0px 30px;
     max-width: 50vw;
     display: flex;
@@ -192,23 +193,26 @@ span {
 
 }
 .footer-area{
+    display: flex;
+    max-width: 1200px;
     padding: 0px 20px;
     border-top: 2px solid rgba(134, 128, 128, 0.516);
-    width: 100%;
+    justify-content: space-around;
+
     
 }
 .links{
-
-    padding: 20px 10px;
-    display: flex;
+    
+    padding: 40px 30px;
+    display: block;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
 
 }
 .links .services{
     flex-flow: row wrap;
     margin: 8px 0px;
+    line-height: 2.0;
    
   
 }
@@ -220,10 +224,17 @@ span {
 }
 
 .links a , p{
+    font-size: 15px;
     margin: 8px 0px;
     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
     text-decoration: none;
     color: #666A72;
+   
+}
+.links a ,p {
+
+    margin: 8px 12px;
+   
    
 }
 
@@ -333,7 +344,7 @@ span {
         height: 10%;
     }
     .left-side{
-        width: 100%;
+        width: 100vw;
         padding: 30px 0px;
         align-items: center;
         border-bottom: 4px solid rgba(174, 166, 166, 0.253);
@@ -366,5 +377,88 @@ span {
 
 
     }
+    .footer-area{
+        display: flex;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+
+        
+    }
+    .box{
+
+        align-items: center;
+        width: 60vw;
+    }
+   
+    .content-container .banner {
+        display: none;
+    }
+    .content-container .motto {
+            display: none;
+    }
+    .content-container .divider {
+            display: none;
+
+    }
+    .left-side .img{
+        padding: 10px 0;
+        margin: 0;
+        align-self: center;
+        justify-self: center;
+
+    }
+    .content-container{
+        width: 100%;
+        height: 10%;
+    }
+    .left-side{
+        width: 100vw;
+        padding: 30px 0px;
+        align-items: center;
+        border-bottom: 4px solid rgba(174, 166, 166, 0.253);
+    
+
+    }
+     .box{
+        display: flex;
+        flex-flow: column wrap;
+        height: 100%;
+    }
+    .form-content{
+        justify-content: center;
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+        max-width: 50vw;
+        width: 100%;
+
+
+    }
+        .form-content input{
+         width:90%;
+
+        padding: 10px 20px;
+        height: 40px;
+        margin-top: 10px;
+        max-width: 50vw;
+ 
+
+
+    }
+    .footer-area{
+        display: flex;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
 
 }
