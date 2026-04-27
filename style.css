@@ -1,11 +1,17 @@
+html{
+    padding: 0;
+    margin: 0;
+}
 body{
-    width: max-content;
+    width: 100%;
+    font-family: 'Seguoe Ui' , serif;
 }
 .box{
     display: flex;
     object-fit: contain;
     max-height: 100vh;
-    max-width: 1200px;
+    width: 100%;
+ 
 
 }
 .content-container{
@@ -23,6 +29,8 @@ body{
 .banner{
     position: relative;
     left: -20%;
+    display: flex;
+     align-items: center;
 }
     
 
@@ -32,8 +40,9 @@ body{
     object-fit: contain;
     margin: 0;
     position: relative;
-    width: 450px;
-    height:450px;
+    width: 500px;
+    height:500px;
+   
 
 
 
@@ -47,6 +56,10 @@ body{
    align-items: flex-start;
 
    
+}
+.rightside{
+    max-width: 50vw;
+    display: flex;
 }
 .fb-logo img{
     
@@ -68,13 +81,13 @@ span {
     color:#1877F2
 }
 .divider{
-    position: relative;
-    left: -70px;
+    position: static;
     display: flex;
     justify-content: center;
     max-height: 100vh ;
-    border: 2px solid rgba(128, 128, 128, 0.295) ;
-    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.295) ;
+  
+
 }
 .form h3, input , button{
     font-family: Segoe UI , Segoe UI Bold,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
@@ -88,7 +101,9 @@ span {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
     position:relative;
+     flex: 1 1 auto;
 
 }
 .form-content h3{
@@ -96,6 +111,7 @@ span {
     font-size: large;
     margin: 0px 0px 8px;
     color: black;
+    align-self: flex-start;
    
 }
 
@@ -109,6 +125,13 @@ span {
     border: 1px solid grey;
     border-radius: 12px;
 }
+.form{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+   
+}
 .form-content input:hover{
     cursor: pointer;   
     border: 1.5px solid rgb(0, 0, 0);
@@ -116,7 +139,7 @@ span {
 }
 .form-content button {
 
-    width: 100%;
+     width:100% ;
     height: 40px;
 
 }
@@ -127,6 +150,7 @@ span {
     color: aliceblue;
     border: none;
     border-radius: 25px;
+  
     
 }
 .form .login:hover{
@@ -162,6 +186,7 @@ span {
     flex-flow: column wrap;
     align-items: center;
     padding: 16px 0px 0px;
+    width: 100%;
     
 }
 
@@ -192,9 +217,11 @@ span {
     width: 65px;
 
 }
+footer{
+    width: 100vw;
+}
 .footer-area{
     display: flex;
-    max-width: 1200px;
     padding: 0px 20px;
     border-top: 2px solid rgba(134, 128, 128, 0.516);
     justify-content: space-around;
@@ -204,9 +231,9 @@ span {
 .links{
     
     padding: 40px 30px;
-    display: block;
+
     flex-direction: column;
-    justify-content: center;
+
 
 }
 .links .services{
@@ -319,7 +346,7 @@ span {
     .box{
 
         align-items: center;
-        width: 60vw;
+        
     }
    
     .content-container .banner {
@@ -337,19 +364,18 @@ span {
         margin: 0;
         align-self: center;
         justify-self: center;
+      
 
     }
     .content-container{
         width: 100%;
         height: 10%;
     }
-    .left-side{
+   .left-side{
+        display: flex;
         width: 100vw;
-        padding: 30px 0px;
+        border-bottom: 2px solid rgba(164, 160, 160, 0.422);
         align-items: center;
-        border-bottom: 4px solid rgba(174, 166, 166, 0.253);
-    
-
     }
      .box{
         display: flex;
@@ -361,8 +387,8 @@ span {
         height: 80vh;
         padding: 0;
         margin: 0;
-        max-width: 50vw;
-        width: 100%;
+        width: 60vw;
+       
 
 
     }
@@ -381,7 +407,7 @@ span {
         display: flex;
         flex-shrink: 1;
         flex-wrap: wrap;
-        width: 60%;
+      
     }
 
 
@@ -395,7 +421,8 @@ span {
     .box{
 
         align-items: center;
-        width: 60vw;
+        width: 100vw;
+       
     }
    
     .content-container .banner {
@@ -431,14 +458,18 @@ span {
         display: flex;
         flex-flow: column wrap;
         height: 100%;
+        width: 100%;
     }
+    .rightside{
+        width: 100%;
+  }
     .form-content{
         justify-content: center;
         height: 80vh;
         padding: 0;
         margin: 0;
-        max-width: 50vw;
-        width: 100%;
+        width: 60vw;
+       
 
 
     }
@@ -457,8 +488,15 @@ span {
         display: flex;
         flex-shrink: 1;
         flex-wrap: wrap;
-        width: 60%;
+       
     }
 
+}
+@media screen and (min-width:1200px){
 
+    html{
+        padding: 0;
+        margin: 0;
+    }
+   
 }
