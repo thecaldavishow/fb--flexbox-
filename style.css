@@ -1,3 +1,6 @@
+*{
+    outline: 2px solid red
+}
 html{
     padding: 0;
     margin: 0;
@@ -5,6 +8,7 @@ html{
 body{
     width: 100%;
     font-family: 'Seguoe Ui' , serif;
+    margin: 0px;
 }
 .box{
     display: flex;
@@ -58,8 +62,11 @@ body{
    
 }
 .rightside{
-    max-width: 50vw;
+    width: 50vw;
     display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 .fb-logo img{
     
@@ -94,24 +101,23 @@ span {
     font-weight: 800;
 }
 .form-content{
-    position: relative;
+   
     right: -30px;
-    padding: 0px 30px;
+    padding: 0px 10px;
     max-width: 50vw;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    position:relative;
-     flex: 1 1 auto;
+ 
 
 }
 .form-content h3{
     font-family: 'Segoe UI', sans-serif;
-    font-size: large;
     margin: 0px 0px 8px;
     color: black;
     align-self: flex-start;
+    font-weight: 600;
    
 }
 
@@ -124,6 +130,7 @@ span {
     height: 40px;
     border: 1px solid grey;
     border-radius: 12px;
+    font-weight: 600;
 }
 .form{
     width: 100%;
@@ -218,21 +225,28 @@ span {
 
 }
 footer{
-    width: 100vw;
+  
+width: 99%;
 }
 .footer-area{
+         max-width:95%;
     display: flex;
-    padding: 0px 20px;
+    flex-flow: row;
+    align-self: center;
+    justify-self: center;
+    
     border-top: 2px solid rgba(134, 128, 128, 0.516);
     justify-content: space-around;
+        overflow-x: hidden;
 
     
 }
 .links{
-    
-    padding: 40px 30px;
-
+ 
+    padding: 20px 20px;
+    display: flex;
     flex-direction: column;
+    
 
 
 }
@@ -256,15 +270,16 @@ footer{
     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
     text-decoration: none;
     color: #666A72;
+    
    
 }
 .links a ,p {
 
     margin: 8px 12px;
+ 
    
    
 }
-
 
 /*media queries*/
 @media only screen and (max-width: 600px) {
@@ -288,30 +303,43 @@ footer{
         border-bottom: 2px solid rgba(164, 160, 160, 0.422);
         align-items: center;
     }
+    .rightside{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
   
     .content-container{
         width: 100%;
         height: 10%;
     }
-      .form-content input{
-         width:100%;
-
-        max-width:100%;
-        padding: 10px 20px;
-        height: 40px;
-        margin-top: 10px;
-        max-width: 50vw;
-        width: 100%;
-
-
+    
+      .form input{
+         
+         padding: 10px 20px;
+         margin-top: 10px;
+         border-radius: 16px;
+         width: 86%;
+       
+     
+        
+        
+    }
+    .divider{
+        display: none;
+    }
+    .form h3{
+        font-weight: 700;
     }
     .form-content {
         justify-content: space-around;
-        padding: 0;
-        margin-top: 20%;
-        max-width: 250px;
-        width: 60%;
+        padding: 10px 20px;
+        width: 100%;
         align-self: center;
+        justify-self: center;
+        height: 100%;
 
     }
    
@@ -461,7 +489,10 @@ footer{
         width: 100%;
     }
     .rightside{
-        width: 100%;
+        width: 50w;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
   }
     .form-content{
         justify-content: center;
